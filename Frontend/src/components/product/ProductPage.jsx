@@ -4,6 +4,7 @@ import RelatedProducts from "./RelatedProducts";
 import { useParams } from "react-router-dom";
 import api, { BASE_URL } from "../../api";
 import { toast } from "react-toastify";
+import randomValue  from '../../GenerateCartCode';
 
 const ProductPage = ({ setNumCartItems }) => {
     const { slug } = useParams();
